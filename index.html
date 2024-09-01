@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <title>Abstimmung Klassentreffen</title>
+    <title>Vote</title>
 </head>
 
 <body>
-    <h1> Abi 2014</h1>
-    <h2>Stimme für dein bevorzugtes Datum ab</h2>
+    <h1> Voting 2024</h1>
+    <h2>Vote for your preferred date</h2>
     <form method="POST" action="/">
         <label for="date">Select a date: </label>
         <select name="date" id="date" required>
@@ -23,10 +23,15 @@
     </form>
 </br>
 </br>
+    
+# optional: add graphics:
 <div class="image-container">
-    <img src="{{ url_for('static', filename='images/LenaCarrie.JPG') }}"
-alt="Lena and Carrie">
-    <img src=" {{ url_for('static', filename='images/heart.png') }}"
+    <img src="{{ url_for('static', filename='images/filename.JPG') }}"
+alt="Your description">
+
+#optional: adding a little heart that appears when hovering over the above graphic
+    
+    <img src=" {{ url_for('static', filename='images/filename.png') }}"
     alt="heart icon" class="heart-icon">
     
 </div>
