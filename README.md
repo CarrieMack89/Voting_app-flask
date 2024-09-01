@@ -19,11 +19,18 @@ Technologies used:
 
 Getting started:
 
-- Clone repository, install necessary dependencies, and lunach app locally to start collecting votes.
+- Clone repository, install necessary dependencies, and launch app locally to start collecting votes.
 - Good project for anyone trying to learn Flask or build a small web application.
+- To run flask app run command: flask run (VS code)
+- this will launch a very simple built-in server: http://127.0.0.1:5000/
+- Note that if you wish to add images to the app, they'll need to be stored in the static folder
+- Note that the text file "Procfile" is for deployment to production on Heroku or Render.
 
 Use Cases:
 
 - Event planning: Quickly determine the best date for group activities
 - Polling: Collect opinions on a range of date options
 - Learning Project: ideal for devs looking to understand basics of Flask and web app development.
+
+
+
