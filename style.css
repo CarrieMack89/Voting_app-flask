@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+
+h1 {
+    color: black;
+}
+
+form {
+    margin: 20px auto;
+    display: inline-block
+}
+
+label,
+select,
+button {
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding: 10px;
+    display: block;
+}
+
+button {
+    background-color: bisque;
+}
+
+button:hover {
+    background-color: rgb(233, 132, 205);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: brown;
+}
+
+img {
+    width: 300px;
+    height: auto;
+
+    border: solid pink;
+
+    border-radius: 10px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.heart-icon {
+    position: absolute;
+    bottom: 10px;
+
+    right: 10px;
+    width: 50px;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .heart-icon {
+    opacity: 1;
+}

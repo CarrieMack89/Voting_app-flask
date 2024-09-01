@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Abstimmung Klassentreffen</title>
+</head>
+
+<body>
+    <h1> Abi 2014</h1>
+    <h2>Stimme für dein bevorzugtes Datum ab</h2>
+    <form method="POST" action="/">
+        <label for="date">Select a date: </label>
+        <select name="date" id="date" required>
+            {% for date in dates %}
+            <option value="{{ date }}">{{ date }}</option>
+            {% endfor %}
+        </select>
+
+        <button type="submit">Submit Vote</button>
+    </form>
+</br>
+</br>
+<div class="image-container">
+    <img src="{{ url_for('static', filename='images/LenaCarrie.JPG') }}"
+alt="Lena and Carrie">
+    <img src=" {{ url_for('static', filename='images/heart.png') }}"
+    alt="heart icon" class="heart-icon">
+    
+</div>
+
+</body>
+
+</html>

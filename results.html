@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Voting Results</title>
+</head>
+
+<body>
+    <h1>Voting Results</h1>
+    <ul>
+        {% for date, count in votes.items() %}
+        <li>{{ date }}: {{ count }}
+            vote(s)
+        </li>
+        {% endfor %}
+    </ul>
+    <h2>Most voted date: {{ most_voted }}
+        with {{ votes[most_voted] }} vote(s)
+    </h2>
+    <a href="/">Go back to voting</a>
+</br>
+</br>
+<div class="image-container">
+    <img src="{{ url_for('static', filename='images/LenaCarrie.JPG') }}"
+alt="Lena and Carrie">
+    <img src=" {{ url_for('static', filename='images/heart.png') }}"
+    alt="heart icon" class="heart-icon">
+    
+</div>
+</body>
+
+</html>
