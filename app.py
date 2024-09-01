@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
-dates = ["05-10-2024", "07-09-2024", "21-12-2024", "05-01-2025"]
+dates = ["05-10-2024", "07-09-2024", "21-12-2024", "05-01-2025"]  # add your dates here
 votes = {date: 0 for date in dates}
 
 
